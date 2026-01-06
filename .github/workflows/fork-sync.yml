@@ -18,6 +18,7 @@ jobs:
 
       - name: Fetch upstream into temp dir
         run: |
+          cd ..
           git clone --depth=1 https://github.com/ccported/ccported.github.io.git upstream
           rm -rf upstream/.github
 
@@ -30,6 +31,7 @@ jobs:
 
       - name: Commit and push
         run: |
+          cd mangosandwich67.github.io
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
