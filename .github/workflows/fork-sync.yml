@@ -31,7 +31,6 @@ jobs:
 
       - name: Commit and push
         run: |
-          cd mangosandwich67.github.io
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
